@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FONTS IMPORT -->
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
+
+        <!-- LINK STYLESHEET -->
+            <link rel="stylesheet" href="style.css">
+
+        <!-- FAVICON -->
+            <link rel="icon" href="./assets/imgs/face-img.svg" type="image/x-icon">
+            
+        <title>Project Alpha: About Me</title>
+    </head>
+
+    <body>
+        
+        <div class="if">
+
+            <!-- TOPBAR -->
+            <section id="topbar" class="topbar" >
+
+              <!-- FACE ICON -->
+                <div id="topbar__icon" class="topbar__icon">
+                    <img src="imgs/face-img.svg" alt="a smiley face" width="40" height="100%">
+                </div>
+
+              <!-- NAVIGATION -->
+              <div id="menu" class="menu">
+                  <nav class="nav">
+                      <a class="nav__link" href="#aboutme">ABOUT MAR</a>
+                      
+                      <a class="nav__link" href="#contact">CONTACT</a>
+                  </nav>
+              </div>
+              <!-- BUTTON -->
+                <!-- ## MAKE CHANGES HERE !! -->              
+                <button id="btn__menu" class="menu btn__menu">
+                    <span>
+                    =
+                    </span>
+                </button>
+             
+            </section>
+      
+            <!-- HEADER  ##FIX-->
+            <header class="section__header">
+                <span>Hi, I'm:</span>
+                <h1>Mar</h1>
+                <h2>Alarcón</h2>
+                <h3>UX/UI, Graphic & Web Designer</h3>
+
+                <!-- ARROW ANIMATION -->
+                <div class="arrow">
+                  <img class="arrow__text" src="./assets/imgs/scrolltext-img.svg" alt="spinning text that says scroll down">
+                  <img class="arrow__img" src="./assets/imgs/arrow-img.svg" alt="black arrow pointing down">
+                </div>
+            </header>
+      
+            <!-- ABOUT ME-->
+            <div id="aboutme" class="section__aboutme content-centered">
+
+                <div class="portrait">
+                    <img class="portrait__img" src="imgs/portrait.jpeg" alt="a portrait picture of my face">
+                </div>
+
+                <!-- ## FIX !!-->
+                <div class="button-container"> <!--Esto deberian ser LINKS estilados como BOTONES-->
+                      <button class="btn">ABOUT ME</button>
+                      <button class="btn btn--secondary">CONTACT ME</button>
+                </div>
+
+                <article> <!-- ## FIX!! -->
+
+                    <p>I’m a multidisciplinary digital designer focused in making <b>simple, clear</b> and <b>useful</b> websites that’ll work for you.</p>
+                    <p>Currently based in Valencia, but willing to work anywhere or remote. :^)</p>
+                    <p>I enjoy photography, listening to music, playing videogames, reading and, obviously, I love cats! Also, I’m skilled as an illustrator & graphic designer.</p>
+
+                </article>
+
+            </div>
+      
+            <!-- SKILLS -->
+            <div id="skills" class="section__skills content-centered">
+
+                <p class="p-big">More Stuff</p>
+
+                <section class="section__skills-content">
+                    <section class="accordion">
+                        <details>
+                            <summary class="accordion title">EDUCATION</summary>
+                                <p class="subtitle">2022</p>
+                                <p>Currently I’m coursing a master's degree on web design, UI/UX, marketing and front-end development at ESAT.</p>
+                                <p class="subtitle">2016-2020</p>
+                                <p>Bachelor’s Degree in Fine Arts, specialty of Visual Art and Design at Universidad Miguel Hernández de Elche.</p>
+                        </details>
+
+                        <details>
+                            <summary class="accordion title">SKILLS</summary>
+                                <p class="subtitle">Soft Skills</p>
+                                <p>Continuously learning, collaboration & teamwork, critical thinking, problem solving and creative..</p>
+                                <p class="subtitle">Softwares</p>
+                                <p>Adobe Creative Suite, Figma, Visual Studio Code, Github.</p>
+                                <p class="subtitle">Programming Languagues</p>
+                                <p>HTML, CSS, JavaScript.</p>
+                        </details>
+
+                        <details>
+                            <summary class="accordion title">AWARDS & RECOGNITION</summary>
+                                <p class="subtitle">2018</p>
+                                <p>Photography exhibition at International Photography Festival “Photoalicante” (San Juan, Alicante)</p>
+                                <p class="subtitle">2017</p>
+                                <p>Photography exhibition at Sala LAC (Altea, Alicante).</p>
+                                <p class="subtitle">2016</p>
+                                <p>3rd prize II Setmana d’Art a Callosa d’en Sarrià (Alicante)</p>
+                        </details>
+                    </section>
+                </section>
+            </div>
+          
+            <!-- CONTACT -->
+            <div id="contact" class="section__contact content-centered">
+
+                <p class="p-big"> Let's Talk!</p>
+
+                <!-- FORM INPUTS -->
+                <form>
+                    <label for="name">Name</label>   
+                    <input name="name" type="text" class="contact-form" placeholder="How should I call you" />
+        
+                    <label for="email">Email</label>   
+                    <input name="email" type="text" class="contact-form" placeholder="So I can contact you" />
+        
+                    <label for="text">Message</label> 
+                    <textarea name="text" type="text" class="contact-form" placeholder="Do you need help with a project? Ask for a budget? Maybe more information about me or my work? Tell me how can I help!"></textarea>
+        
+                    <input type="submit" value="SEND"/>
+                </form>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="section__contact-icons">
+
+                  <p>You can also find me on:</p>
+
+                  <div class="rrss__icons">
+                        <a href="https://github.com/mrlrcn" target="_blank">
+
+                        <img border="0" alt="Github" src="imgs/logo-github.svg" width="25" height="25">
+
+                        <a href="https://www.linkedin.com/in/maralarcon/" target="_blank">
+
+                        <img border="0" alt="Linkedin" src="imgs/logo-linkedin.svg" width="25" height="25">
+
+                        <!--hazte Behance!! cambiar codepen x behance-->
+                        <a href="https://codepen.io/mrlrcn" target="_blank">
+                        <img border="0" alt="Codepen" src="imgs/logo-codepen.svg" width="25" height="25">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
