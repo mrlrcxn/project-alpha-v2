@@ -109,6 +109,16 @@ body {
   border: var(--border-gray);
 }
 
+.rrss__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 40px;
+}
+
 form {
   max-width: 420px;
   margin: 40px 0px 0px 0px;
