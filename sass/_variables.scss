@@ -1,0 +1,19 @@
+:root {
+  /* CUSTOM PROPERTIES */
+  /* COLORS */
+  --color-white: white;
+  --color-gray-light: #e9e5ea;
+  --color-gray-dark: #413c4a;
+  --color-black: black;
+
+  --color-purple: #e2d5fc;
+  --color-purple-dark: #b4a1db;
+
+  /* BORDERS */
+  --border-black: 2px solid var(--color-black);
+  --border-gray: 2px solid var(--color-gray-dark);
+  --border-purple: 2px solid var(--color-purple-dark);
+  --border-radius: 0.25rem;
+
+  --shadow: 2px 2px 0px var(--color-black);
+}
