@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   /* CUSTOM PROPERTIES */
   /* COLORS */
@@ -67,6 +68,113 @@ body {
   border-radius: var(--border-radius); /*?*/
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
+}
+
+/*NAVBAR PRUEBAS*/
+/*Este codigo es una guarrada ¡ARREGLAR! */
+.topbar {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--color-purple);
+  position: relative;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-family: "Roboto Mono", "monospace";
+  font-weight: 700;
+}
+
+.topbar__icon {
+  margin: 0 auto;
+  position: absolute center;
+}
+
+.show .topbar__icon {
+  padding: 0;
+  margin: 0;
+  position: absolute left;
+}
+
+.menu {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 40px;
+  font-family: "Rubik", "sans-serif";
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.show .menu {
+  margin: 0 auto;
+  vertical-align: middle;
+  padding: 1% 0;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
+
+.nav__link {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.nav__link:hover {
+  color: var(--color-white);
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+#menu__btn {
+  background-color: var(--color-white);
 }
 
 .btn {
