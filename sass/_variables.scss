@@ -9,6 +9,9 @@
   --color-purple: #e2d5fc;
   --color-purple-dark: #b4a1db;
 
+  /* FONTS */
+  --bold: 800;
+
   /* BORDERS */
   --border-black: 2px solid var(--color-black);
   --border-gray: 2px solid var(--color-gray-dark);
@@ -16,4 +19,5 @@
   --border-radius: 0.25rem;
 
   --shadow: 2px 2px 0px var(--color-black);
+  --shadow-hover: 6px 8px 0px var(--color-black);
 }
