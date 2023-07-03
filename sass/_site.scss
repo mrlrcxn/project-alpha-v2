@@ -36,3 +36,100 @@ body {
   border-radius: var(--border-radius); /*?*/
   box-shadow: var(--shadow);
 }
+
+.section {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__header {
+    position: relative;
+    height: 95vh;
+    background: var(--color-purple);
+
+    font-family: "Rubik", sans-serif;
+    font-weight: var(--bold);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 16px;
+    border-bottom: 4px solid black; /*?*/
+
+    & span {
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+
+    & h1 {
+      margin-top: 10px;
+      letter-spacing: 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    & h2 {
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+
+    & h3 {
+      text-transform: uppercase;
+      text-align: right;
+      margin-top: 100px;
+    }
+  }
+  &__aboutme {
+  }
+  &__skills {
+    color: var(--color-white);
+    background-color: var(--color-gray-dark);
+  }
+  &__contact {
+  }
+}
+
+/* ARROW ANIMATION */
+
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  margin: 1% 0em 1% auto;
+  text-align: right;
+}
+.arrow__text {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(365deg);
+  }
+}
+.arrow__img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50%;
+}
