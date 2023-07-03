@@ -1,3 +1,4 @@
+button,
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -15,6 +16,8 @@
   box-shadow: var(--shadow);
   transition: all 0.14s ease-out;
 }
+
+button:hover,
 .btn:hover {
   color: var(--color-purple-dark);
   background-color: var(--color-white);
@@ -34,4 +37,10 @@
   color: var(--color-gray-dark);
   background-color: var(--color-white);
   border: var(--border-gray);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
 }
