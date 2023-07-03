@@ -1,0 +1,17 @@
+.p-big {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  line-height: 100%;
+  font-size: 4em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content-centered {
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -19,6 +19,34 @@
   --shadow-hover: 6px 8px 0px var(--color-black);
 }
 
+.p-big {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  line-height: 100%;
+  font-size: 4em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-centered {
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
