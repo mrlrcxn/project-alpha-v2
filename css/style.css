@@ -449,6 +449,9 @@ a {
   width: fit-content;
   gap: 40px;
 }
+.rrss__icons a:hover {
+  color: var(--color-purple);
+}
 
 form {
   max-width: 420px;

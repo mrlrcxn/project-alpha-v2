@@ -2,4 +2,8 @@
   display: flex;
   width: fit-content;
   gap: 40px;
+
+  & a:hover {
+    color: var(--color-purple);
+  }
 }

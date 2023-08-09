@@ -1,173 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS IMPORT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- FONTS IMPORT -->
-            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
+    <!-- LINK STYLESHEET -->
+    <link rel="stylesheet" href="/css/style.css" />
 
-        <!-- LINK STYLESHEET -->
-            <link rel="stylesheet" href="/css/style.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="/assets/imgs/face-img.svg" type="image/x-icon" />
 
-        <!-- FAVICON -->
-            <link rel="icon" href="/assets/imgs/face-img.svg" type="image/x-icon">
-            
-        <title>Project Alpha: About Me</title>
-    </head>
+    <title>Project Alpha: About Me</title>
+  </head>
 
-    <body>
-        
-        <div class="if">
-
-            <!-- TOPBAR -->
-            <section id="topbar" class="topbar" >
-
-              <!-- FACE ICON -->
-                <div id="topbar__icon" class="topbar__icon">
-                    <img src="/assets/imgs/face-img.svg" alt="a smiley face" width="40" height="100%">
-                </div>
-
-              <!-- NAVIGATION -->
-              <div id="menu" class="menu">
-                  <nav class="nav">
-                      <a class="nav__link" href="#aboutme">ABOUT MAR</a>
-                      
-                      <a class="nav__link" href="#contact">CONTACT</a>
-                  </nav>
-              </div>
-              <!-- BUTTON -->
-                <!-- ## MAKE CHANGES HERE !! -->              
-                <button id="menu__btn" class=" menu__btn">
-                    <span>
-                    =
-                    </span>
-                </button>
-             
-            </section>
-      
-            <!-- HEADER  ##FIX-->
-            <header class="section section__header">
-                <span>Hi, I'm:</span>
-                <h1>Mar</h1>
-                <h2>Alarcón</h2>
-                <h3>UX/UI, Graphic & Web Designer</h3>
-
-                <!-- ARROW ANIMATION -->
-                <div class="arrow">
-                  <img class="arrow__text" src="./assets/imgs/scrolltext-img.svg" alt="spinning text that says scroll down">
-                  <img class="arrow__img" src="./assets/imgs/arrow-img.svg" alt="black arrow pointing down">
-                </div>
-            </header>
-      
-            <!-- ABOUT ME-->
-            <div id="aboutme" class="section section__aboutme content-centered">
-
-                <div class="portrait">
-                    <img src="./assets/imgs/portrait.jpeg" alt="a portrait picture of my face">
-                </div>
-
-                <!-- ## FIX !!-->
-                <div class="aection__aboutme__action"> 
-                      <a href="#aboutme" class="btn">About Me</a>
-                      <a href="#contact" class="btn btn--secondary">Contact Me</a>
-                </div>
-
-                <article> <!-- ## FIX!! -->
-
-                    <p>I’m a multidisciplinary digital designer focused in making <b>simple, clear</b> and <b>useful</b> websites that’ll work for you.</p>
-                    <p>Currently based in Valencia, but willing to work anywhere or remote. :^)</p>
-                    <p>I enjoy photography, listening to music, playing videogames, reading and, obviously, I love cats! Also, I’m skilled as an illustrator & graphic designer.</p>
-
-                </article>
-
-            </div>
-      
-            <!-- SKILLS -->
-            <div id="skills" class="section section__skills content-centered">
-
-                <p class="p-big">More Stuff</p>
-
-                <section class="section__skills-content">
-                    <section class="accordion">
-                        <details>
-                            <summary class="accordion title">EDUCATION</summary>
-                                <p class="subtitle">2022</p>
-                                <p>Currently I’m coursing a master's degree on web design, UI/UX, marketing and front-end development at ESAT.</p>
-                                <p class="subtitle">2016-2020</p>
-                                <p>Bachelor’s Degree in Fine Arts, specialty of Visual Art and Design at Universidad Miguel Hernández de Elche.</p>
-                        </details>
-
-                        <details>
-                            <summary class="accordion title">SKILLS</summary>
-                                <p class="subtitle">Soft Skills</p>
-                                <p>Continuously learning, collaboration & teamwork, critical thinking, problem solving and creative..</p>
-                                <p class="subtitle">Softwares</p>
-                                <p>Adobe Creative Suite, Figma, Visual Studio Code, Github.</p>
-                                <p class="subtitle">Programming Languagues</p>
-                                <p>HTML, CSS, JavaScript.</p>
-                        </details>
-
-                        <details>
-                            <summary class="accordion title">AWARDS & RECOGNITION</summary>
-                                <p class="subtitle">2018</p>
-                                <p>Photography exhibition at International Photography Festival “Photoalicante” (San Juan, Alicante)</p>
-                                <p class="subtitle">2017</p>
-                                <p>Photography exhibition at Sala LAC (Altea, Alicante).</p>
-                                <p class="subtitle">2016</p>
-                                <p>3rd prize II Setmana d’Art a Callosa d’en Sarrià (Alicante)</p>
-                        </details>
-                    </section>
-                </section>
-            </div>
-          
-            <!-- CONTACT -->
-            <div id="contact" class="section section__contact content-centered">
-
-                <p class="p-big"> Let's Talk!</p>
-
-                <!-- FORM INPUTS -->
-                <form>
-                    <label for="name">Name</label>   
-                    <input name="name" type="text" class="contact-form" placeholder="How should I call you" />
-        
-                    <label for="email">Email</label>   
-                    <input name="email" type="text" class="contact-form" placeholder="So I can contact you" />
-        
-                    <label for="text">Message</label> 
-                    <textarea name="text" type="text" class="contact-form" placeholder="Do you need help with a project? Ask for a budget? Maybe more information about me or my work? Tell me how can I help!"></textarea>
-        
-                    <input type="submit" value="SEND"/>
-                </form>
-
-                <!-- SOCIAL MEDIA -->
-
-                  <p>You can also find me on:</p>
-
-                  <div class="rrss__icons">
-                        <a href="https://github.com/mrlrcxn" target="_blank">
-
-                        <img border="0" alt="Github" src="/assets/icons/logo-github.svg" width="25" height="25">
-
-                        <a href="https://www.linkedin.com/in/maralarcon/" target="_blank">
-
-                        <img border="0" alt="Linkedin" src="/assets/icons/logo-linkedin.svg" width="25" height="25">
-
-                        <!--hazte Behance!! cambiar codepen x behance-->
-                        <a href="https://codepen.io/mrlrcxn" target="_blank">
-                        <img border="0" alt="Codepen" src="/assets/icons/logo-codepen.svg" width="25" height="25">
-                        
-                    </div>
-
-
-            </div>
-
+  <body>
+    <div class="if">
+      <!-- TOPBAR -->
+      <section id="topbar" class="topbar">
+        <!-- FACE ICON -->
+        <div id="topbar__icon" class="topbar__icon">
+          <img
+            src="/assets/imgs/face-img.svg"
+            alt="a smiley face"
+            width="40"
+            height="100%"
+          />
         </div>
 
-        <!--Link to JS File-->
-        <script src="./js/index.js"></script>
+        <!-- NAVIGATION -->
+        <div id="menu" class="menu">
+          <nav class="nav">
+            <a class="nav__link" href="#aboutme">ABOUT MAR</a>
 
-    </body>
+            <a class="nav__link" href="#contact">CONTACT</a>
+          </nav>
+        </div>
+        <!-- BUTTON -->
+        <!-- ## MAKE CHANGES HERE !! -->
+        <button id="menu__btn" class="menu__btn">
+          <span> = </span>
+        </button>
+      </section>
 
+      <!-- HEADER  ##FIX-->
+      <header class="section section__header">
+        <span>Hi, I'm:</span>
+        <h1>Mar</h1>
+        <h2>Alarcón</h2>
+        <h3>UX/UI, Graphic & Web Designer</h3>
+
+        <!-- ARROW ANIMATION -->
+        <div class="arrow">
+          <img
+            class="arrow__text"
+            src="./assets/imgs/scrolltext-img.svg"
+            alt="spinning text that says scroll down"
+          />
+          <img
+            class="arrow__img"
+            src="./assets/imgs/arrow-img.svg"
+            alt="black arrow pointing down"
+          />
+        </div>
+      </header>
+
+      <!-- ABOUT ME-->
+      <div id="aboutme" class="section section__aboutme content-centered">
+        <div class="portrait">
+          <img
+            src="./assets/imgs/portrait.webp"
+            alt="a portrait picture of my face"
+          />
+        </div>
+
+        <!-- ## FIX !!-->
+        <div class="aection__aboutme__action">
+          <a href="#aboutme" class="btn">About Me</a>
+          <a href="#contact" class="btn btn--secondary">Contact Me</a>
+        </div>
+
+        <article>
+          <!-- ## FIX!! -->
+
+          <p>
+            I’m a multidisciplinary digital designer focused in making
+            <b>simple, clear</b> and <b>useful</b> websites that’ll work for
+            you.
+          </p>
+          <p>
+            Currently based in Valencia, but willing to work anywhere or remote.
+            :^)
+          </p>
+          <p>
+            I enjoy photography, listening to music, playing videogames, reading
+            and, obviously, I love cats! Also, I’m skilled as an illustrator &
+            graphic designer.
+          </p>
+        </article>
+      </div>
+
+      <!-- SKILLS -->
+      <div id="skills" class="section section__skills content-centered">
+        <p class="p-big">More Stuff</p>
+
+        <section class="section__skills-content">
+          <section class="accordion">
+            <details>
+              <summary class="accordion title">EDUCATION</summary>
+              <p class="subtitle">2022</p>
+              <p>
+                Currently I’m coursing a master's degree on web design, UI/UX,
+                marketing and front-end development at ESAT.
+              </p>
+              <p class="subtitle">2016-2020</p>
+              <p>
+                Bachelor’s Degree in Fine Arts, specialty of Visual Art and
+                Design at Universidad Miguel Hernández de Elche.
+              </p>
+            </details>
+
+            <details>
+              <summary class="accordion title">SKILLS</summary>
+              <p class="subtitle">Soft Skills</p>
+              <p>
+                Continuously learning, collaboration & teamwork, critical
+                thinking, problem solving and creative..
+              </p>
+              <p class="subtitle">Softwares</p>
+              <p>Adobe Creative Suite, Figma, Visual Studio Code, Github.</p>
+              <p class="subtitle">Programming Languagues</p>
+              <p>HTML, CSS, JavaScript.</p>
+            </details>
+
+            <details>
+              <summary class="accordion title">AWARDS & RECOGNITION</summary>
+              <p class="subtitle">2018</p>
+              <p>
+                Photography exhibition at International Photography Festival
+                “Photoalicante” (San Juan, Alicante)
+              </p>
+              <p class="subtitle">2017</p>
+              <p>Photography exhibition at Sala LAC (Altea, Alicante).</p>
+              <p class="subtitle">2016</p>
+              <p>3rd prize II Setmana d’Art a Callosa d’en Sarrià (Alicante)</p>
+            </details>
+          </section>
+        </section>
+      </div>
+
+      <!-- CONTACT -->
+      <div id="contact" class="section section__contact content-centered">
+        <p class="p-big">Let's Talk!</p>
+
+        <!-- FORM INPUTS -->
+        <form>
+          <label for="name">Name</label>
+          <input
+            name="name"
+            type="text"
+            class="contact-form"
+            placeholder="How should I call you"
+          />
+
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="text"
+            class="contact-form"
+            placeholder="So I can contact you"
+          />
+
+          <label for="text">Message</label>
+          <textarea
+            name="text"
+            type="text"
+            class="contact-form"
+            placeholder="Do you need help with a project? Ask for a budget? Maybe more information about me or my work? Tell me how can I help!"
+          ></textarea>
+
+          <input type="submit" value="SEND" />
+        </form>
+
+        <!-- SOCIAL MEDIA -->
+
+        <p>You can also find me on:</p>
+
+        <div class="rrss__icons">
+          <a href="https://codepen.io/mrlrcxn" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25px"
+              height="25px"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="currentColor"
+                d="M6.21,10l-1.33.89V9.11ZM9.47,7.82V5.34L5.31,8.12,7.16,9.36Zm5.23.3L10.53,5.34V7.82l2.31,1.54ZM5.31,11.88l4.16,2.78V12.18L7.16,10.64Zm5.22.3v2.48l4.17-2.78-1.86-1.24ZM10,8.74,8.12,10,10,11.26,11.88,10ZM20,10A10,10,0,1,1,10,0,10,10,0,0,1,20,10ZM16.18,8.12V8s0,0,0,0v0l0,0v0l0,0,0,0,0,0,0,0v0l0,0h0L10.3,3.91a.53.53,0,0,0-.59,0L4.05,7.67h0l0,0v0l0,0,0,0v0l0,0v0l0,0v0l0,0V8h0v4h0v.05l0,0v0l0,0v0l0,0,0,0,0,0,0,0v0l0,0h0L9.71,16.1a.49.49,0,0,0,.29.08.64.64,0,0,0,.3-.08L16,12.33h0l0,0v0l0,0,0,0,0,0,0,0v0l0,0v0l0,0V12h0V8.12Zm-1.06,2.77V9.11L13.79,10Z"
+              />
+            </svg>
+          </a>
+
+          <a href="https://github.com/mrlrcxn" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25px"
+              height="25px"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="currentColor"
+                d="M10,0A10.1,10.1,0,0,0,6.17.76,10,10,0,0,0,6.84,19.5c.5.08.66-.23.66-.5V17.31C4.73,17.91,4.14,16,4.14,16A2.69,2.69,0,0,0,3,14.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C6,14.17,3.62,13.31,3.62,9.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V19c0,.27.16.59.67.5A10,10,0,0,0,13.83.76,10.1,10.1,0,0,0,10,0Z"
+              />
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/maralarcon/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25px"
+              height="25px"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="currentColor"
+                d="M16,0a2,2,0,0,1,1.41.59A2,2,0,0,1,18,2V16a2,2,0,0,1-2,2H2a2,2,0,0,1-1.41-.59A2,2,0,0,1,0,16V2A2,2,0,0,1,.59.59,2,2,0,0,1,2,0Zm-.5,15.5V10.2a3.24,3.24,0,0,0-3.26-3.26,2.9,2.9,0,0,0-2.32,1.3V7.13H7.13V15.5H9.92V10.57a1.4,1.4,0,1,1,2.79,0V15.5ZM3.88,5.56A1.67,1.67,0,0,0,5.56,3.88,1.69,1.69,0,0,0,3.88,2.19,1.67,1.67,0,0,0,2.19,3.88,1.69,1.69,0,0,0,3.88,5.56ZM5.27,15.5V7.13H2.5V15.5Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Link to JS File-->
+    <script src="./js/index.js"></script>
+  </body>
 </html>
